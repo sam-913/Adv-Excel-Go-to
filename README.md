@@ -1,7 +1,3 @@
-Here's a GitHub-friendly README for your Excel formulas list:
-
----
-
 # Advanced Excel Formulas Guide 🧮
 
 This repository contains a comprehensive guide to advanced Excel formulas, designed to enhance productivity and elevate your Excel skills. Whether you're a data analyst, accountant, or Excel enthusiast, this resource will help you unlock the full potential of Excel.
