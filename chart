@@ -1,0 +1,158 @@
+Here’s a comprehensive list of **advanced Excel formulas** with examples to help you level up your skills:
+
+---
+
+### **1. LOOKUP and Reference Formulas**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `VLOOKUP`      | Looks up a value in a table vertically.                                                          | `=VLOOKUP(101, A2:D10, 3, FALSE)`                                                      |
+| `HLOOKUP`      | Looks up a value in a table horizontally.                                                        | `=HLOOKUP("Product", A1:D5, 2, FALSE)`                                                 |
+| `INDEX`        | Returns the value of a cell in a specified row and column.                                       | `=INDEX(A2:D10, 2, 3)`                                                                 |
+| `MATCH`        | Returns the relative position of a value in a range.                                             | `=MATCH(50, B2:B10, 0)`                                                                |
+| `XLOOKUP`      | Searches for a value in a range and returns a corresponding value from another range.            | `=XLOOKUP(101, A2:A10, C2:C10, "Not Found")`                                           |
+| `OFFSET`       | Returns a reference to a range that is a specified number of rows and columns away.              | `=OFFSET(A1, 3, 2)`                                                                    |
+
+---
+
+### **2. Conditional and Logical Formulas**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `IF`           | Returns a value if a condition is TRUE and another value if FALSE.                               | `=IF(A1>100, "Pass", "Fail")`                                                          |
+| `IFS`          | Evaluates multiple conditions and returns a value corresponding to the first TRUE condition.     | `=IFS(A1>90, "A", A1>80, "B", A1>70, "C")`                                             |
+| `AND`          | Returns TRUE if all conditions are TRUE.                                                         | `=AND(A1>10, B1<5)`                                                                    |
+| `OR`           | Returns TRUE if any condition is TRUE.                                                           | `=OR(A1=5, B1=10)`                                                                     |
+| `NOT`          | Reverses the logical value of its argument.                                                      | `=NOT(A1>10)`                                                                          |
+
+---
+
+### **3. Text Functions**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `CONCATENATE`  | Combines multiple text strings into one.                                                         | `=CONCATENATE(A1, " ", B1)`                                                            |
+| `TEXT`         | Formats a number and converts it to text.                                                        | `=TEXT(A1, "DD/MM/YYYY")`                                                              |
+| `LEFT`         | Returns the first characters from a text string.                                                 | `=LEFT(A1, 5)`                                                                         |
+| `RIGHT`        | Returns the last characters from a text string.                                                  | `=RIGHT(A1, 3)`                                                                        |
+| `MID`          | Returns a specific number of characters from the middle of a text string.                        | `=MID(A1, 3, 5)`                                                                       |
+| `LEN`          | Returns the length of a text string.                                                             | `=LEN(A1)`                                                                             |
+| `TRIM`         | Removes all extra spaces from a text string.                                                     | `=TRIM(A1)`                                                                            |
+
+---
+
+### **4. Date and Time Formulas**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `TODAY`        | Returns the current date.                                                                        | `=TODAY()`                                                                             |
+| `NOW`          | Returns the current date and time.                                                               | `=NOW()`                                                                               |
+| `EDATE`        | Returns the date that is a specified number of months before or after a start date.              | `=EDATE(A1, 3)`                                                                        |
+| `DATEDIF`      | Calculates the difference between two dates.                                                     | `=DATEDIF(A1, B1, "D")`                                                                |
+| `TEXT`         | Formats a date or time as text.                                                                  | `=TEXT(A1, "MMMM YYYY")`                                                               |
+
+---
+
+### **5. Financial Functions**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `PMT`          | Calculates the payment for a loan based on constant payments and a constant interest rate.       | `=PMT(5%/12, 60, -10000)`                                                              |
+| `FV`           | Returns the future value of an investment based on periodic payments and a constant interest rate.| `=FV(5%/12, 60, -100)`                                                                 |
+| `NPV`          | Calculates the net present value of an investment based on a discount rate and future payments.  | `=NPV(10%, A1:A5)`                                                                     |
+| `IRR`          | Returns the internal rate of return for a series of cash flows.                                  | `=IRR(A1:A5)`                                                                          |
+
+---
+
+### **6. Array Formulas (Dynamic Arrays)**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `UNIQUE`       | Returns a list of unique values from a range.                                                    | `=UNIQUE(A1:A10)`                                                                      |
+| `FILTER`       | Filters a range of data based on criteria.                                                       | `=FILTER(A1:A10, B1:B10>50)`                                                           |
+| `SORT`         | Sorts the contents of a range or array.                                                          | `=SORT(A1:A10)`                                                                        |
+| `SEQUENCE`     | Generates a sequence of numbers.                                                                 | `=SEQUENCE(5, 2, 1, 1)`                                                                |
+| `TRANSPOSE`    | Transposes the rows and columns of an array.                                                     | `=TRANSPOSE(A1:D4)`                                                                    |
+
+---
+
+### **7. Statistical Functions**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `AVERAGE`      | Returns the average of a range of numbers.                                                       | `=AVERAGE(A1:A10)`                                                                     |
+| `MEDIAN`       | Returns the median of a range of numbers.                                                        | `=MEDIAN(A1:A10)`                                                                      |
+| `MODE`         | Returns the most frequently occurring value in a range.                                          | `=MODE(A1:A10)`                                                                        |
+| `STDEV`        | Returns the standard deviation of a range.                                                       | `=STDEV(A1:A10)`                                                                       |
+| `COUNT`        | Counts the number of numeric values in a range.                                                  | `=COUNT(A1:A10)`                                                                       |
+| `COUNTIF`      | Counts the number of cells that meet a specific condition.                                       | `=COUNTIF(A1:A10, \">50\")`                                                            |
+
+---
+
+### **8. Advanced Statistical and Mathematical Formulas**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `RAND`         | Returns a random number between 0 and 1.                                                         | `=RAND()`                                                                              |
+| `RANDBETWEEN`  | Returns a random integer between specified numbers.                                               | `=RANDBETWEEN(1, 100)`                                                                 |
+| `ROUND`        | Rounds a number to a specified number of digits.                                                  | `=ROUND(A1, 2)`                                                                        |
+| `ROUNDUP`      | Rounds a number up to the nearest integer or decimal place.                                       | `=ROUNDUP(A1, 2)`                                                                      |
+| `ROUNDDOWN`    | Rounds a number down to the nearest integer or decimal place.                                     | `=ROUNDDOWN(A1, 2)`                                                                    |
+| `PERCENTILE`   | Returns the k-th percentile of a range.                                                          | `=PERCENTILE(A1:A10, 0.9)`                                                             |
+| `RANK`         | Returns the rank of a number in a list.                                                          | `=RANK(A1, A1:A10)`                                                                    |
+| `VAR`          | Estimates variance based on a sample.                                                            | `=VAR(A1:A10)`                                                                         |
+
+---
+
+### **9. Error Handling Functions**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `IFERROR`      | Returns a value if the formula results in an error, otherwise returns the formula result.         | `=IFERROR(A1/B1, "Error")`                                                             |
+| `ISERROR`      | Checks whether a value is an error.                                                              | `=ISERROR(A1)`                                                                         |
+| `ISNUMBER`     | Checks whether a value is numeric.                                                               | `=ISNUMBER(A1)`                                                                        |
+| `ISTEXT`       | Checks whether a value is text.                                                                  | `=ISTEXT(A1)`                                                                          |
+
+---
+
+### **10. Power Query and Data Manipulation**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `TEXTJOIN`     | Joins multiple text strings with a specified delimiter.                                          | `=TEXTJOIN(", ", TRUE, A1:A10)`                                                        |
+| `SPLIT`        | Splits text into multiple parts (Power Query required).                                          | Custom Power Query Formula                                                             |
+| `REMOVE.DUPLICATES` | Removes duplicate entries (Power Query or Excel built-in feature).                          | Use Power Query for dynamic ranges.                                                    |
+
+---
+
+### **11. Engineering and Technical Functions**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `CONVERT`      | Converts a number from one measurement unit to another.                                          | `=CONVERT(10, "cm", "in")`                                                             |
+| `DEC2BIN`      | Converts a decimal number to binary.                                                             | `=DEC2BIN(10)`                                                                         |
+| `BIN2DEC`      | Converts a binary number to decimal.                                                             | `=BIN2DEC(1010)`                                                                       |
+
+---
+
+### **12. Advanced Data Analysis with Pivot Tables**
+
+Consider integrating Pivot Table functionality with calculated fields and custom formulas such as:
+
+- `% of Parent Row Total`
+- `Difference From` (Year-over-Year comparisons)
+- `Running Total In`
+
+---
+
+### **13. Array Formulas with Conditional Logic**
+
+| Formula        | Description                                                                                      | Example                                                                                 |
+|----------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `SUMIFS`       | Adds values that meet multiple criteria.                                                         | `=SUMIFS(A1:A10, B1:B10, ">50", C1:C10, "Completed")`                                   |
+| `AVERAGEIFS`   | Returns the average of values that meet multiple criteria.                                       | `=AVERAGEIFS(A1:A10, B1:B10, ">50", C1:C10, "Completed")`                               |
+| `MAXIFS`       | Returns the maximum value among cells specified by multiple criteria.                            | `=MAXIFS(A1:A10, B1:B10, ">50")`                                                       |
+| `MINIFS`       | Returns the minimum value among cells specified by multiple criteria.                            | `=MINIFS(A1:A10, B1:B10, ">50")`                                                       |
+
+---
+
