@@ -60,6 +60,4 @@ This guide is licensed under the MIT License. Feel free to use and share.
 
 For further assistance or questions, check the [Excel Documentation](https://support.microsoft.com/en-us/excel) or open an issue here.
 
----
-
-Let me know if you'd like additional details, such as examples, images, or advanced usage instructions!
+-
